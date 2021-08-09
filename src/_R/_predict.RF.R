@@ -29,7 +29,7 @@ library(randomForest)
 
 args <- commandArgs(trailingOnly = TRUE)
 
-inputDir <- paste0("./tmp/",args[1]) # replace this with inputDir <- "." if testing the script outside RCADE Shell
+inputDir <- paste0("tmp/",args[1]) # replace this with inputDir <- "." if testing the script outside RCADE Shell
 srcDir <- "./src/_R" # replace this with srcDir <- "." if testing the script outside RCADE Shell
 
 data <- read.csv(paste0(inputDir,"/_predict.in"),sep="\t")
