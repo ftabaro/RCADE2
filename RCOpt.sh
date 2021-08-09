@@ -43,7 +43,7 @@ fi
 
 
 ####################### define temporary path
-tmp_folder="./tmp/"$jobid
+tmp_folder="tmp/"$jobid
 mkdir -p $tmp_folder
 RF_in=$tmp_folder"/_predict.in"
 RF_out=$tmp_folder"/_predict.RF.out"
@@ -59,7 +59,7 @@ $memebin/fasta-dinucleotide-shuffle -f $centered -t -dinuc 1> $shuffled
 cat $centered $shuffled > $all
 
 ####################### define the output path
-out_folder="./out/"$jobid
+out_folder="out/"$jobid
 mkdir -p $out_folder
 rm -f $out_folder/log.step1.txt
 rm -f $out_folder/log.step2.txt
